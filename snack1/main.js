@@ -21,9 +21,13 @@ const bikes = [
     }
 ];
 
-const lightBike = findLightestBike(bikes);
+//const name = findLightestBike(bikes).name;
+//const weight = findLightestBike(bikes).weight;
+const {name, weight} = findLightestBike(bikes);
 
-alert(`La bici più leggera è la ${lightBike.name}, con un peso di ${lightBike.weight}kg`);
+alert(`La bici più leggera è la ${name}, con un peso di ${weight}kg`);
+
+
 
 
 function findLightestBike(bikes) {
